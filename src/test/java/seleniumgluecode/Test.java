@@ -25,7 +25,7 @@ public class Test {
         driver.findElement(By.linkText("Sign in")).click();
     }
     //for string parameter use .* and for integer(//d+) for more "http://www.automationtestinghub.com/practical-examples-cucumber-data-driven-testing/"
-    @When("^user enters (.*) and Password$")
+    @When("^user typed (.*) and Password$")
     public void user_enters_username_and_Password(String username) throws Throwable {
     	driver.findElement(By.id("email")).sendKeys(username);
     	//driver.findElement(By.id("email")).sendKeys("blog.cucumber@gmail.com");
